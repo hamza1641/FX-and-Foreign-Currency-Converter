@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FX & Crypto Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f9;">
+
+  <!-- Header Section -->
+  <header style="background-color: #282c34; padding: 10px 20px; color: white; position: sticky; top: 0; z-index: 1000;">
+    <nav style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+      <!-- Logo -->
+      <div class="nav__logo" style="font-size: 1.5em; font-weight: bold;">
+        <a href="#" style="color: white; text-decoration: none;">FX & Crypto Converter</a>
+      </div>
+
+      <!-- Toggle Button for Small Screens -->
+      <div class="toggle__btn" style="font-size: 1.5em; cursor: pointer; color: white; display: none;">&#9776;</div>
+
+      <!-- Navigation Links -->
+      <ul class="nav__links" style="list-style: none; display: flex; gap: 15px; margin: 0; padding: 0;">
+        <li><a href="index.html" class="link" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="crypto.html" class="link" style="color: white; text-decoration: none;">Crypto</a></li>
+        <li><a href="Fx.html" class="link" style="color: white; text-decoration: none;">Convertor</a></li>
+        <li><a href="history.html" class="link" style="color: white; text-decoration: none;">HDA</a></li>
+        
+      </ul>
+    </nav>
+
+    <!-- Notification Bar -->
+    <div class="notification-bar" style="margin-top: 10px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 10px;">
+      <div class="crypto-updates" style="font-size: 1em; font-weight: bold;">Crypto Market Updates</div>
+      <div class="notification-icon" onclick="toggleDropdown()" style="position: relative; cursor: pointer;">
+        <i class="fas fa-bell" style="font-size: 1.2em;"></i>
+
+        <!-- Dropdown -->
+        <div class="dropdown" id="notificationDropdown" style="display: none; position: absolute; top: 100%; right: 0; background: white; color: #333; border: 1px solid #ddd; border-radius: 5px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); width: 250px; z-index: 10;">
+          <ul style="list-style: none; margin: 0; padding: 10px;">
+            <li style="padding: 5px 10px; border-bottom: 1px solid #ddd;">Bitcoin price up by 2%</li>
+            <li style="padding: 5px 10px; border-bottom: 1px solid #ddd;">Ethereum reaches new high</li>
+            <li style="padding: 5px 10px;">Ripple gains momentum</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+      <div class="sec">
+                        <!-- Card Section -->
+                        <div style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 1500px; background: white; overflow: hidden; text-align: center;height: 700px; margin-bottom: 20px;">
+                            <img src="image/crypto.png" alt="Cryptocurrency Graph" style="width: 100%; border-bottom: 1px solid #ddd;">
+                            <div style="padding: 20px;">
+                                <h2 style="margin: 0 0 10px; font-size: 2em; color: #333;">Cryptocurrency Market Trend</h2>
+                                <p style="margin: 0 0 15px; font-size: 1.2em; color: #555;">
+                                    Cryptocurrency is revolutionizing the financial world. This graph showcases market trends and performance over time, offering valuable insights for investors and enthusiasts.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <!-- Description Section -->
+                        <div style="width: 1470px; background-color: #ffffff; padding: 20px; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                            <h3 style="margin-bottom: 10px; font-size: 1.8em; color: #333;">Detailed Market Analysis</h3>
+                            <p style="margin-bottom: 15px; font-size: 1.1em; color: #555; line-height: 1.6;">
+                                Cryptocurrencies, led by Bitcoin and Ethereum, have become an essential part of the global financial ecosystem. The graph above provides a snapshot of the market's fluctuations, enabling users to monitor and predict price movements effectively.
+                            </p>
+                            <p style="margin-bottom: 15px; font-size: 1.1em; color: #555; line-height: 1.6;">
+                                Key factors affecting the crypto market include technological advancements, regulatory changes, and global economic conditions. With this data visualization, you can track historical trends, analyze market volatility, and stay ahead in the fast-paced world of digital assets.
+                            </p>
+                            <p style="margin-bottom: 15px; font-size: 1.1em; color: #555; line-height: 1.6;">
+                                Whether you're a seasoned investor or just beginning your journey, understanding these trends is crucial. Leverage this tool to identify patterns, compare performance across various coins, and make data-driven decisions with confidence.
+                            </p>
+                            <p style="margin: 0; font-size: 1.1em; color: #555; line-height: 1.6;">
+                                Join millions of others in exploring the future of finance. Stay informed, invest wisely, and embrace the opportunities in the ever-evolving cryptocurrency market.
+                            </p>
+                        </div>
+      </div>
+  <!-- JavaScript for Dropdown -->
+  <script>
+    function toggleDropdown() {
+      const dropdown = document.getElementById('notificationDropdown');
+      dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
